@@ -1,7 +1,6 @@
 import os
 import instaloader
 
-
 def pic_download(instagram_username_profile_pic):
     access_bot = instaloader.Instaloader()
     os.chdir(os.path.join(os.path.expanduser('~'), 'Downloads'))

@@ -24,6 +24,7 @@ let isMouseDown = false;
 let drawnArray = [];
 
 // Brush Size Formatting
+
 function displayBrushSize() {
     if (brushSlider.value < 12) brushSize.textContent = `0${brushSlider.value}`;
     else brushSize.textContent = brushSlider.value;

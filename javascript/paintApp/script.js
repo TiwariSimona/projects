@@ -30,6 +30,7 @@ function displayBrushSize() {
     else brushSize.textContent = brushSlider.value;
 }
 
+
 // Brush Size
 brushSlider.addEventListener('change', () => {
     currentSize = brushSlider.value;

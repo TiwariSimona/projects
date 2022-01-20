@@ -44,6 +44,7 @@ brushColorButton.addEventListener('change', () => {
     currentBgColor = `#${brushColorButton.value}`;
 });
 
+
 // Background Color
 bucketColorButton.addEventListener('change', () => {
     brushColor = `#${bucketColorButton.value}`;

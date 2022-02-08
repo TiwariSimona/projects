@@ -1,4 +1,3 @@
-
 const loadStorageButton = document.getElementById('load-storage');
 const saveStorageButton = document.getElementById('save-storage');
 const clearStorageButton = document.getElementById('clear-storage');

@@ -30,6 +30,7 @@ function displayBrushSize() {
 }
 
 
+
 // Brush Size
 
 brushSlider.addEventListener('change', () => {

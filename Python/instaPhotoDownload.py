@@ -6,6 +6,7 @@ def pic_download(instagram_username_profile_pic):
     os.chdir(os.path.join(os.path.expanduser('~'), 'Downloads'))
     if os.path.isdir("Instagram Downloads"):
         os.chdir("Instagram Downloads")
+        
         return access_bot.downlaod_profile(instagram_username_profile_pic, profile_pic_only=True)
     else:
         os.mkdir("Instagram Downloads")

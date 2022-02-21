@@ -3,6 +3,7 @@ It is an implementation of multithreaded server. It accepts connections from an 
 clients; any message sent from one client is broadcast to all clients. In addition to ServerSockets, it
 demonstrates the use of threads. Because there are interactions among clients, this server needs to keep
 track of all the clients it has at any one time. 
+
 */
 
 import java.awt.*;

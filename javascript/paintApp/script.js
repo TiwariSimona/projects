@@ -6,6 +6,7 @@ const clearCanvasButton = document.getElementById('clear-canvas');
 const activeToolElement = document.getElementById('active-tool');
 const brushColorButton = document.getElementById('brush-color');
 const brushIcon = document.getElementById('brush');
+
 const brushSize = document.getElementById('brush-size');
 const brushSlider = document.getElementById('brush-slider');
 const bucketColorButton = document.getElementById('bucket-color');

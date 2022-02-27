@@ -11,6 +11,7 @@ class Account:
     def account_creation(self):
         self.account_number = int(input("Enter the account number\t"))
         self.name = input("Enter the account holder name\t")
+        
         self.account_type = input("Enter the type of account\t")
         self.balance_amount = int(input("Enter the opening balance amount\t"))
         print("Account Created")

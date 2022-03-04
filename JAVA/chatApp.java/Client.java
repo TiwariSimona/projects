@@ -27,6 +27,7 @@ public class Client extends JFrame implements ActionListener {
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+			
 			public void run() {
 				try {
 					Client client = new Client();

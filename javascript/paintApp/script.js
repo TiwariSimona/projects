@@ -23,6 +23,7 @@ let currentSize = 12;
 let brushColor = '#FFFFFF';
 let currentBgColor = '#000000';
 let isEraser = false;
+
 let isMouseDown = false;
 let drawnArray = [];
 

@@ -11,6 +11,7 @@ const brushSize = document.getElementById('brush-size');
 
 
 const brushSlider = document.getElementById('brush-slider');
+
 const bucketColorButton = document.getElementById('bucket-color');
 const eraser = document.getElementById('eraser');
 const downloadButton = document.getElementById('download');

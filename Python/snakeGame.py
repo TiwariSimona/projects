@@ -92,4 +92,69 @@ s.onkey(movestop,"stop")
 #Finalising the main loop
 while True:
   s.update()
+  if head.rcor()>290:
+   head.set x(-290)
+  if head.xcor()<-290:
+   head.set x(290)
+  if head.ycor()>290:
+   head.set y(-290)
+  if head.ycor()<-290:
+   head.set y(290)
+   
+#Checking Collision with food
+if head.distance(food)<20:
+ #move food to random position
+ x=random.randint(-290,290)
+ y=random.randint(-290,290)
+ food.goto(x,y)
+ 
+ #increase length of snake
+ body=turtle.Turtle()
+ body.speed(0)
+ body.penup()
+ body.shape("square")
+ body.color("red")
+ body.fillcolor("black")
+ bodies.append(body)
+ 
+ score+=10
+ #change in delay
+ delay-=0.001
+ 
+ #update highscore
+ if score>highscore:
+  highestScore=score
+ sb.clear()
+ sb.write("Score:(), highestScore().format(Score,highestScore))
+          
+#To move snake body
+for index in range (len(bodies)-1,0,-1):
+          x=bodies[index-1].xcor()
+          y=bodies[index-1].ycor()
+          bodies[index].goto(x,y)
+if len(bodies)>0:
+          x=head.xcor()
+          y=head.ycor()
+          bodies[0].goto(x,y)
+move()
+          
+#Checking collision with snake body
+for body in bodies:
+          if body.distance(head)<20:
+           time.sleep(1)
+          head.goto(0,0)
+          head.direction="Stop"
+          
+         #When game stops body should be clear
+          for body in bodies:
+           body.ht()  #hideturtle
+          bodies.clear()
+          Score=0
+          Delay=0.1
+         
+         #Update Score Board
+          sb.clear()
+          sb.write("Score() HighestScore()"format(Score() highestScore())
+          time.sleep(delay)
+s.mainloop()
   
